@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Прототип_2._Розробка</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\cleaning.png" />
+    <None Remove="Icons\close.png" />
+    <None Remove="Icons\eraser.png" />
+    <None Remove="Icons\floppy-disk.png" />
+    <None Remove="Icons\history.png" />
+    <None Remove="Sounds\button.wav" />
+    <None Remove="Sounds\button_sound.wav" />
+    <None Remove="Sounds\menubar.wav" />
+    <None Remove="Sounds\radio.wav" />
+    <None Remove="Sounds\radio_sound.wav" />
+    <None Remove="Voices\black.mp3" />
+    <None Remove="Voices\clear.mp3" />
+    <None Remove="Voices\clear.wav" />
+    <None Remove="Voices\dark.wav" />
+    <None Remove="Voices\light.wav" />
+    <None Remove="Voices\save.mp3" />
+    <None Remove="Voices\save.wav" />
+    <None Remove="Voices\white.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\close.png" />
+    <Resource Include="Icons\eraser.png" />
+    <Resource Include="Icons\floppy-disk.png" />
+    <Resource Include="Icons\history.png" />
+    <Content Include="Sounds\radio_sound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\button_sound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\clear.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\dark.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\light.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Voices\save.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Sounds\wav\button.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
